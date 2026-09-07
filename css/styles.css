@@ -1,0 +1,285 @@
+/* Portfolio styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2933;
+    background-color: #ffffff;
+}
+
+/* Navigation */
+
+.navbar {
+    padding: 0.8rem 4%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #333333 !important;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+}
+
+.nav-link.active {
+    color: #000000 !important;
+    font-weight: 700;
+    border-bottom: 2px solid #000000;
+}
+
+/* About / Hero */
+
+#about {
+    background-color: #8fdbf2;
+    min-height: 100vh;
+}
+
+.hero-content {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    max-width: 720px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #27313a;
+}
+
+.hero-button {
+    margin: 1rem 0.5rem 1rem 0;
+}
+
+.hero-image {
+    width: 72%;
+    max-width: 380px;
+    height: auto;
+}
+
+/* Shared section styles */
+
+#projects,
+#hobbies {
+    padding: 7% 0;
+}
+
+.section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.section-intro {
+    max-width: 720px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.7;
+    color: #55606a;
+}
+
+/* Projects */
+
+#projects {
+    background-color: #ffffff;
+}
+
+.feature-box {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e3e6e8;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+}
+
+.project-image {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.03);
+}
+
+.project-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card-body {
+    padding: 1.5rem;
+}
+
+.project-card h3,
+.hobby-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.project-card p,
+.hobby-card p {
+    line-height: 1.65;
+    color: #4e5962;
+}
+.studybuddy-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+}
+/* Hobbies */
+
+#hobbies {
+    background-color: #d9f3f8;
+}
+
+.hobby-column {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.hobby-card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.hobby-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+.hobby-image:hover {
+    transform: scale(1.025);
+}
+
+.hobby-card-body {
+    padding: 1.5rem;
+}
+
+.hobby-button {
+    margin-top: 0.5rem;
+}
+
+.piano-image {
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Footer */
+
+#footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#footer p {
+    margin: 0;
+    color: #59636c;
+}
+
+.footer-email {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: #59636c;
+    font-size: 1.75rem;
+}
+
+.footer-email:hover,
+.footer-email:focus {
+    color: #000000;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+    #about {
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+
+    .nav-link.active {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .project-image,
+    .hobby-image {
+        height: 220px;
+    }
+}
